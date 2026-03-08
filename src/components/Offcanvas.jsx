@@ -10,7 +10,7 @@ const Offcanvas = () => {
                     </div>
                     <div className="wtoffcanvas__logo">
                         <a href="index.html">
-                            <img src="/assets/img/logo/logo.png" alt="logo" />
+                            <img src="/assets/img/logo/AM_white2.png" alt="logo" />
                         </a>
                     </div>
                     <div className="wtoffcanvas__title">
@@ -19,24 +19,24 @@ const Offcanvas = () => {
                     <div className="wt-main-menu-mobile d-xl-none"></div>
                     <div className="wtoffcanvas__contact-info">
                         <div className="wtoffcanvas__contact-title">
-                            <h5>Contact us</h5>
+                            <h5>Connect</h5>
                         </div>
                         <ul>
                             <li>
                                 <i className="fa-solid fa-location-dot"></i>
-                                <a href="https://www.google.com/maps/@23.8223586,90.3661283,15z" target="_blank" rel="noopener noreferrer">Manchester 21, Zurich, CH</a>
+                                <a href="https://www.google.com/maps/place/Nagpur,+Maharashtra/" target="_blank" rel="noopener noreferrer">Nagpur, Maharashtra, IN</a>
                             </li>
-                            <li>
+                            {/* <li>
                                 <i className="fas fa-envelope"></i>
-                                <a href="mailto:omioinfo@mail.com"><span>omioinfo@mail.com</span></a>
+                                <a href="mailto:a@mail.com"><span>a@mail.com</span></a>
                             </li>
                             <li>
                                 <i className="fa-solid fa-phone-flip"></i>
-                                <a href="tel:+48555223224">(+00) 678 345 98568</a>
-                            </li>
+                                <a href="tel:+91 1234567890"> +91 1234567890</a>
+                            </li> */}
                         </ul>
                     </div>
-                    <div className="wtoffcanvas__input">
+                    {/* <div className="wtoffcanvas__input">
                         <div className="wtoffcanvas__input-title">
                             <h4>Get UPdate</h4>
                         </div>
@@ -48,13 +48,11 @@ const Offcanvas = () => {
                                 </button>
                             </div>
                         </form>
-                    </div>
+                    </div> */}
                     <div className="wtoffcanvas__social">
                         <div className="social-icon">
-                            <a href="#"><i className="fab fa-facebook-f"></i></a>
-                            <a href="#"><i className="fab fa-instagram"></i></a>
-                            <a href="#"><i className="fab fa-twitter"></i></a>
-                            <a href="#"><i className="fab fa-pinterest-p"></i></a>
+                            <a href="https://www.linkedin.com/in/abhinav-mukwane/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/abhinavmukwane" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
