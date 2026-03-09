@@ -19,7 +19,7 @@ const Hero = () => {
                                         <img src="/assets/img/hero/sd.jpg" alt="" />
                                     </div>
                                     <div className="wt-hero-2-wrap-content wt_fade_anim" data-delay=".5">
-                                        <p className="wt-hero-2-wrap-paragaraph" style={{ marginBottom: '20px', fontSize: '30px', maxWidth: 'none' }}>
+                                        <p className="wt-hero-2-wrap-paragaraph" style={{ marginBottom: '20px', fontSize: 'clamp(18px, 4vw, 30px)', maxWidth: 'none' }}>
                                             Working @ <a target="_blank" href="https://www.softtrust.com/" style={{ color: '#fd7e14' }} rel="noreferrer">Trust Fintech Limited, Nagpur</a>
                                         </p>
                                         <div className="wt-hero-2-button">

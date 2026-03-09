@@ -60,7 +60,7 @@ const Resume = () => {
                                                 <div className="wt-resume-2-tab-content">
                                                     <h4 className="wt-resume-2-tab-title">Software Developer</h4>
                                                     <h6 className="wt-resume-2-tab-subtitle">Trust Fintech Limited, Nagpur</h6>
-                                                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px', textAlign: 'justify' }} className="wt-section-paragraph wt-section-2-paragraph">
+                                                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px', textAlign: 'left' }} className="wt-section-paragraph wt-section-2-paragraph">
                                                         <li>Developed and maintained Fintech full-stack web applications using ASP.Net MVC and Web API in the Banking Domain Web Applications, focusing on Loan Origination Systems (LOS) and ONDC Credit Applications.</li>
                                                         <li>Implemented AI-driven automation for credit risk assessment, customer verification, and document processing using OpenAI and Azure Cognitive Services.</li>
                                                         <li>Designed scalable application architecture and developed projects from scratch, covering database design, API structure, security, and deployment.</li>
@@ -82,7 +82,7 @@ const Resume = () => {
                                                 <div className="wt-resume-2-tab-content">
                                                     <h4 className="wt-resume-2-tab-title">Executive Engineer</h4>
                                                     <h6 className="wt-resume-2-tab-subtitle">Raychem RPG Pvt. Ltd., Pune</h6>
-                                                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px', textAlign: 'justify' }} className="wt-section-paragraph wt-section-2-paragraph">
+                                                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px', textAlign: 'left' }} className="wt-section-paragraph wt-section-2-paragraph">
                                                         <li>Work with development teams and product managers to ideate software solutions for DrishTi web Application for digital monitoring of production.</li>
                                                         <li>Developing and maintaining web-based applications and Web API.</li>
                                                         <li>Worked with SQL, MySQL, and MongoDB, ensuring seamless data flow between databases and web applications.</li>
@@ -99,7 +99,7 @@ const Resume = () => {
                                                 <div className="wt-resume-2-tab-content">
                                                     <h4 className="wt-resume-2-tab-title">Graduate Engineer Trainee</h4>
                                                     <h6 className="wt-resume-2-tab-subtitle">Raychem RPG Pvt. Ltd., Pune</h6>
-                                                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px', textAlign: 'justify' }} className="wt-section-paragraph wt-section-2-paragraph">
+                                                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px', textAlign: 'left' }} className="wt-section-paragraph wt-section-2-paragraph">
                                                         <li>Using Oracle ERP for production planning, scheduling, and reporting functions, including generating work orders and tracking production progress.</li>
                                                         <li>Utilized Microsoft Excel to create and maintain production reports, including production schedules, inventory levels, and capacity utilization.</li>
                                                         <li>Assisted in the planning and scheduling of production activities based on demand forecasts, capacity constraints, and inventory levels.</li>

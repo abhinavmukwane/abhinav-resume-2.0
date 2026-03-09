@@ -2930,14 +2930,14 @@ div.demo img {
 }
 @media (max-width: 767px) {
   .wtoffcanvas {
-    width: 100%;
-    padding: 40px 35px;
+    width: 300px;
+    padding: 30px 20px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .wtoffcanvas {
-    width: 400px;
-    padding: 40px;
+    width: 320px;
+    padding: 30px 20px;
   }
 }
 .wtoffcanvas.opened {
@@ -3969,12 +3969,12 @@ div.demo img {
 }
 @media (max-width: 767px) {
   .wt-section-title {
-    font-size: 49px;
+    font-size: 42px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .wt-section-title {
-    font-size: 70px;
+    font-size: 50px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
@@ -7248,7 +7248,7 @@ blockquote i {
   }
 }
 .wt-hero-2-title {
-  font-size: 110px !important;
+  font-size: 110px;
   line-height: 0.9;
   margin-bottom: 90px;
 }
@@ -7284,13 +7284,13 @@ blockquote i {
 }
 @media (max-width: 767px) {
   .wt-hero-2-title {
-    font-size: 60px;
+    font-size: 55px;
     margin-bottom: 40px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .wt-hero-2-title {
-    font-size: 95px;
+    font-size: 70px;
   }
 }
 .wt-hero-2-wrap {
