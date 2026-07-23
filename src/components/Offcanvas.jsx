@@ -6,11 +6,11 @@ const Offcanvas = () => {
             <div className="wtoffcanvas-area">
                 <div className="wtoffcanvas">
                     <div className="wtoffcanvas__close-btn">
-                        <button className="close-btn"><i className="fal fa-times"></i></button>
+                        <button className="close-btn" aria-label="Close menu"><i className="fal fa-times"></i></button>
                     </div>
                     <div className="wtoffcanvas__logo">
-                        <a href="index.html">
-                            <img src="/assets/img/logo/AM_white2.png" alt="logo" />
+                        <a href="#" aria-label="Back to top">
+                            <img src="/assets/img/logo/AM_white2.png" alt="Abhinav Mukwane logo" />
                         </a>
                     </div>
                     <div className="wtoffcanvas__title">

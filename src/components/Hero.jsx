@@ -16,7 +16,7 @@ const Hero = () => {
                                 </div>
                                 <div className="wt-hero-2-wrap">
                                     <div className="wt-hero-2-wrap-thumb wt_fade_anim" data-delay=".3">
-                                        <img src="/assets/img/hero/sd.jpg" alt="" />
+                                        <img src="/assets/img/hero/sd.jpg" alt="Abhinav Mukwane" />
                                     </div>
                                     <div className="wt-hero-2-wrap-content wt_fade_anim" data-delay=".5">
                                         <p className="wt-hero-2-wrap-paragaraph" style={{ marginBottom: '20px', fontSize: 'clamp(18px, 4vw, 30px)', maxWidth: 'none' }}>
@@ -37,7 +37,7 @@ const Hero = () => {
                             </div>
                             <div className="wt-hero-2-right">
                                 <div className="wt-hero-2-thumb wt_fade_anim" data-delay=".4">
-                                    <img src="/assets/img/hero/hero-2-thumb.jpg" alt="hero" />
+                                    <img src="/assets/img/hero/hero-2-thumb.jpg" alt="Abhinav Mukwane portrait" />
                                 </div>
                             </div>
                         </div>

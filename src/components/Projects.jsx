@@ -48,7 +48,11 @@ const Projects = () => {
                         <div className="wt-project-2-item mt-50 wt_fade_anim mb-50" data-delay=".3">
                             <div className="wt-project-2-content">
                                 <h6 className="wt-project-2-subtitle" style={{ color: '#555' }}>ASP.NET MVC using EF, C#, Web API, SQL, jQuery, Bootstrap, Git, Azure</h6>
-                                <h4 className="wt-project-2-title" style={{ marginBottom: '15px' }}>ONDC Credit Buyer App</h4>
+                                <h4 className="wt-project-2-title" style={{ marginBottom: '15px' }}>
+                                    <a href="https://trustilyloan.in" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>
+                                        ONDC Credit Buyer App <i className="fa-regular fa-arrow-up-right" style={{ fontSize: '18px', marginLeft: '5px' }}></i>
+                                    </a>
+                                </h4>
                                 <ul style={{ listStyleType: 'disc', paddingLeft: '20px', textAlign: 'justify' }} className="wt-section-paragraph wt-section-2-paragraph">
                                     <li>Developed and implemented web application using ONDC FIS Credit Getaway API, for easy access to loans through an open network. It allows users to apply for credit seamlessly by connecting them with financial institutions that offer loans based on their requirements.</li>
                                     <li>Designed and integrated user-friendly interfaces with dynamic content, leveraging jQuery and Bootstrap for responsiveness and interactivity.</li>
@@ -91,6 +95,31 @@ const Projects = () => {
                                         </ul>
                                     </li>
                                     <li>This approach is widely used in banking systems, payment gateways, and fintech APIs.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xl-6 col-md-6">
+                        <div className="wt-project-2-item mt-50 wt_fade_anim mb-50" data-delay=".3">
+                            <div className="wt-project-2-content">
+                                <h6 className="wt-project-2-subtitle" style={{ color: '#555' }}>ASP.NET Core 8 MVC using EF, C#, ML.NET(LightGBM, SSA), SQL Server, Razor Views, jQuery, Bootstrap, GitHub, Azure</h6>
+                                <h4 className="wt-project-2-title" style={{ marginBottom: '15px' }}>
+                                    <a href="https://finrisklensai.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>
+                                        FinRiskLens AI <i className="fa-regular fa-arrow-up-right" style={{ fontSize: '18px', marginLeft: '5px' }}></i>
+                                    </a>
+                                </h4>
+                                <ul style={{ listStyleType: 'disc', paddingLeft: '20px', textAlign: 'justify' }} className="wt-section-paragraph wt-section-2-paragraph">
+                                    <li>FinRiskLens AI is an AI/ML-powered MSME's Financial Health Score - Built for IDBI Innovate 2026.</li>
+                                    <li><strong>For India's New-to-Credit (NTC) and New-to-Bank (NTB) MSMEs a credit-worthiness score built from their existing digital footprint.</strong> It aggregates consent-based alternate data:
+                                        <ul style={{ listStyleType: 'circle', paddingLeft: '20px', marginTop: '5px', marginBottom: '5px' }}>
+                                            <li>Udyam</li>
+                                            <li>GST</li>
+                                            <li>ITR</li>
+                                            <li>Account Aggregator</li>
+                                            <li>MCA</li>
+                                        </ul>
+                                    </li>
+                                    <li>This computes a 0 to 1000 Financial Health Score across six weighted dimensions , explains every score, and surfaces it as a visual Financial Health Card for Bank credit officers.</li>
                                 </ul>
                             </div>
                         </div>

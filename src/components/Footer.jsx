@@ -106,7 +106,7 @@ const Footer = () => {
                     <div className="row">
                         <div className="col">
                             <div className="wt-footer-copyright text-center">
-                                <p className="wt-footer-copyright-pagaraph">Copyright © 2026 <a href="#">Abhi9M</a>. All Rights Reserved.</p>
+                                <p className="wt-footer-copyright-pagaraph">Copyright © 2026 <a href="https://github.com/abhinavmukwane" target="_blank" rel="noopener noreferrer">Abhi9M</a>. All Rights Reserved.</p>
                             </div>
                         </div>
                     </div>

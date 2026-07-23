@@ -11,7 +11,7 @@ const Header = () => {
 
                                 {/* logo */}
                                 <div className="wt-header-logo">
-                                    <a href="#"><img src="/assets/img/logo/AM_white2.png" alt="Logo" /></a>
+                                    <a href="#" aria-label="Back to top"><img src="/assets/img/logo/AM_white2.png" alt="Abhinav Mukwane logo" /></a>
                                 </div>
 
                                 {/* menu */}
@@ -38,7 +38,7 @@ const Header = () => {
 
                                 {/* Header Site-Bar Button */}
                                 <div className="wt-header-3-toggle d-lg-none">
-                                    <button className="wt-menu-bar"><img src="/assets/img/icon/menu.svg" alt="" /></button>
+                                    <button className="wt-menu-bar" aria-label="Open menu"><img src="/assets/img/icon/menu.svg" alt="" /></button>
                                 </div>
 
                             </div>

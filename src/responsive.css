@@ -1,0 +1,45 @@
+/*
+ * Mobile responsive refinements.
+ * These override the theme + inline component styles on small screens.
+ * `!important` is required because several targets are set via inline style=.
+ */
+
+@media (max-width: 767px) {
+  /* Justified text creates ugly word-gaps/rivers on narrow screens */
+  .wt-section-2-paragraph,
+  .wt-project-2-item ul,
+  .wt-resume-2-tab-content ul {
+    text-align: left !important;
+  }
+
+  /* The desktop layout leaves a 200px gap after the resume intro — far too
+     much on a phone. Collapse it. */
+  .wt-resume-2-area .mb-200 {
+    margin-bottom: 48px !important;
+  }
+
+  /* Give the resume intro headings a little breathing room and keep them
+     from feeling oversized on small screens */
+  .wt-resume-2-area h4 {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+  .wt-resume-2-area h5 {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  /* Tighten section vertical padding so sections aren't so far apart */
+  .wt-skill-2-area,
+  .wt-resume-2-area {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+}
+
+/* Very small phones: ensure the hero title never overflows */
+@media (max-width: 400px) {
+  .wt-hero-2-title {
+    font-size: clamp(34px, 12vw, 55px) !important;
+  }
+}

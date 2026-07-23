@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
-import SearchPopup from './components/SearchPopup';
 import Offcanvas from './components/Offcanvas';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Resume from './components/Resume';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import Blog from './components/Blog';
+// import Blog from './components/Blog'; // Blog section currently hidden — re-enable with <Blog /> below
 import Footer from './components/Footer';
 import AnimatedCursor from 'react-animated-cursor';
 
@@ -74,7 +73,6 @@ function App() {
 
   return (
     <>
-      <SearchPopup />
       <Offcanvas />
       <Header />
       <AnimatedCursor

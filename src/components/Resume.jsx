@@ -12,7 +12,7 @@ const Resume = () => {
                             </div>
                         </div>
                         <div className="wt_fade_anim" data-delay=".4">
-                            <h4 style={{ marginBottom: '15px' }}>✨ Software Developer | AI & Cloud Enthusiast | Full-Stack Engineer</h4>
+                            <h4 style={{ marginBottom: '15px' }}>✨ Software Developer | AI & Cloud Enthusiast | Microsoft Certified: Azure Developer Associate</h4>
                             <h5 style={{ marginBottom: '20px', color: '#555' }}>🚀 Building Scalable, Secure & AI-Driven Solutions</h5>
 
                             <p className="wt-section-paragraph wt-section-2-paragraph" style={{ textAlign: 'justify' }}>
