@@ -20,7 +20,7 @@ const Projects = () => {
                     <div className="col-xl-12 col-md-12">
                         <div className="wt-project-2-item wt_fade_anim mb-50" data-delay=".3">
                             <div className="wt-project-2-content">
-                                <h6 className="wt-project-2-subtitle" style={{ color: '#555' }}>ASP.NET MVC using EF, C#, Web API, SQL, jQuery, AJAX, Bootstrap</h6>
+                                <h6 className="wt-project-2-subtitle" style={{ color: 'var(--wt-text-2)' }}>ASP.NET MVC using EF, C#, Web API, SQL, jQuery, AJAX, Bootstrap</h6>
                                 <h4 className="wt-project-2-title" style={{ marginBottom: '15px' }}>PMEGP Portal (Gov. Project)</h4>
                                 <ul style={{ listStyleType: 'disc', paddingLeft: '20px', textAlign: 'justify' }} className="wt-section-paragraph wt-section-2-paragraph">
                                     <li>Developed and implemented the web portal for MSME PMEGP Scheme aimed at promoting self-employment and entrepreneurship by providing financial assistance with subsidies to micro and small enterprises.</li>
@@ -34,7 +34,7 @@ const Projects = () => {
                     <div className="col-xl-6 col-md-6">
                         <div className="wt-project-2-item mt-50 wt_fade_anim mb-50" data-delay=".6">
                             <div className="wt-project-2-content">
-                                <h6 className="wt-project-2-subtitle" style={{ color: '#555' }}>ASP.NET MVC using EF, C#, Web API, SQL, jQuery, AJAX, Bootstrap, Git</h6>
+                                <h6 className="wt-project-2-subtitle" style={{ color: 'var(--wt-text-2)' }}>ASP.NET MVC using EF, C#, Web API, SQL, jQuery, AJAX, Bootstrap, Git</h6>
                                 <h4 className="wt-project-2-title" style={{ marginBottom: '15px' }}>Loan Origination System</h4>
                                 <ul style={{ listStyleType: 'disc', paddingLeft: '20px', textAlign: 'justify' }} className="wt-section-paragraph wt-section-2-paragraph">
                                     <li>Developed this web application to automates the process of loan application, approval and disbursement.</li>
@@ -47,7 +47,7 @@ const Projects = () => {
                     <div className="col-xl-6 col-md-6">
                         <div className="wt-project-2-item mt-50 wt_fade_anim mb-50" data-delay=".3">
                             <div className="wt-project-2-content">
-                                <h6 className="wt-project-2-subtitle" style={{ color: '#555' }}>ASP.NET MVC using EF, C#, Web API, SQL, jQuery, Bootstrap, Git, Azure</h6>
+                                <h6 className="wt-project-2-subtitle" style={{ color: 'var(--wt-text-2)' }}>ASP.NET MVC using EF, C#, Web API, SQL, jQuery, Bootstrap, Git, Azure</h6>
                                 <h4 className="wt-project-2-title" style={{ marginBottom: '15px' }}>
                                     <a href="https://trustilyloan.in" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>
                                         ONDC Credit Buyer App <i className="fa-regular fa-arrow-up-right" style={{ fontSize: '18px', marginLeft: '5px' }}></i>
@@ -65,7 +65,7 @@ const Projects = () => {
                     <div className="col-xl-6 col-md-6">
                         <div className="wt-project-2-item mt-50 wt_fade_anim mb-50" data-delay=".6">
                             <div className="wt-project-2-content">
-                                <h6 className="wt-project-2-subtitle" style={{ color: '#555' }}>ASP.NET MVC using EF, C#, Web API, SQL, jQuery, Bootstrap, Git, Azure</h6>
+                                <h6 className="wt-project-2-subtitle" style={{ color: 'var(--wt-text-2)' }}>ASP.NET MVC using EF, C#, Web API, SQL, jQuery, Bootstrap, Git, Azure</h6>
                                 <h4 className="wt-project-2-title" style={{ marginBottom: '15px' }}>ONDC Credit Seller App</h4>
                                 <ul style={{ listStyleType: 'disc', paddingLeft: '20px', textAlign: 'justify' }} className="wt-section-paragraph wt-section-2-paragraph">
                                     <li>Integrated an Account Aggregator Service (API) to enable secure and efficient data aggregation across various financial institutions for credit assessment purposes.</li>
@@ -79,7 +79,7 @@ const Projects = () => {
                     <div className="col-xl-6 col-md-6">
                         <div className="wt-project-2-item mt-50 wt_fade_anim mb-50" data-delay=".3">
                             <div className="wt-project-2-content">
-                                <h6 className="wt-project-2-subtitle" style={{ color: '#555' }}>🚀 Enterprise Hybrid Encryption NuGet Package</h6>
+                                <h6 className="wt-project-2-subtitle" style={{ color: 'var(--wt-text-2)' }}>🚀 Enterprise Hybrid Encryption NuGet Package</h6>
                                 <h4 className="wt-project-2-title" style={{ marginBottom: '15px' }}>
                                     <a href="https://github.com/abhinavmukwane/FinTechEncryption" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>
                                         Fintech Encryption <i className="fa-regular fa-arrow-up-right" style={{ fontSize: '18px', marginLeft: '5px' }}></i>
@@ -102,7 +102,7 @@ const Projects = () => {
                     <div className="col-xl-6 col-md-6">
                         <div className="wt-project-2-item mt-50 wt_fade_anim mb-50" data-delay=".3">
                             <div className="wt-project-2-content">
-                                <h6 className="wt-project-2-subtitle" style={{ color: '#555' }}>ASP.NET Core 8 MVC using EF, C#, ML.NET(LightGBM, SSA), SQL Server, Razor Views, jQuery, Bootstrap, GitHub, Azure</h6>
+                                <h6 className="wt-project-2-subtitle" style={{ color: 'var(--wt-text-2)' }}>ASP.NET Core 8 MVC using EF, C#, ML.NET(LightGBM, SSA), SQL Server, Razor Views, jQuery, Bootstrap, GitHub, Azure</h6>
                                 <h4 className="wt-project-2-title" style={{ marginBottom: '15px' }}>
                                     <a href="https://finrisklensai.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>
                                         FinRiskLens AI <i className="fa-regular fa-arrow-up-right" style={{ fontSize: '18px', marginLeft: '5px' }}></i>

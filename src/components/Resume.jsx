@@ -13,7 +13,7 @@ const Resume = () => {
                         </div>
                         <div className="wt_fade_anim" data-delay=".4">
                             <h4 style={{ marginBottom: '15px' }}>✨ Software Developer | AI & Cloud Enthusiast | Microsoft Certified: Azure Developer Associate</h4>
-                            <h5 style={{ marginBottom: '20px', color: '#555' }}>🚀 Building Scalable, Secure & AI-Driven Solutions</h5>
+                            <h5 style={{ marginBottom: '20px', color: 'var(--wt-text-2)' }}>🚀 Building Scalable, Secure & AI-Driven Solutions</h5>
 
                             <p className="wt-section-paragraph wt-section-2-paragraph" style={{ textAlign: 'justify' }}>
                                 I am a passionate Software Developer at Trust Fintech Limited, specializing in banking domain applications like Loan Origination Systems (LOS), ONDC Credit Applications and PMEGP (Government Loan Project). With expertise in full-stack development, I create high-performance, secure, and scalable applications that enhance user experiences and streamline business operations.

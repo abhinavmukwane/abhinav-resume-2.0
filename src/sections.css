@@ -1,0 +1,390 @@
+/*
+ * Styles for the custom sections added on top of the theme:
+ * Stats, Career Timeline, Open Source, Certifications.
+ * Uses the theme's own CSS variables so it inherits colours/fonts.
+ */
+
+.am-section {
+  padding: 90px 0;
+}
+
+.am-section-head {
+  margin-bottom: 55px;
+}
+
+.am-eyebrow {
+  display: inline-block;
+  font-family: var(--wt-ff-body);
+  font-size: 13px;
+  font-weight: var(--wt-fw-sbold);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--wt-theme-primary);
+  margin-bottom: 12px;
+}
+
+/* ============================= Stats ============================= */
+
+.am-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.am-stat {
+  padding: 38px 26px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+  transition: transform 0.35s ease, border-color 0.35s ease, background 0.35s ease;
+}
+
+.am-stat:hover {
+  transform: translateY(-6px);
+  border-color: var(--wt-theme-primary);
+  background: linear-gradient(180deg, rgba(124, 2, 255, 0.12), rgba(255, 255, 255, 0));
+}
+
+.am-stat-num {
+  font-family: var(--wt-ff-heading);
+  font-size: 68px;
+  font-weight: var(--wt-fw-bold);
+  line-height: 1;
+  color: var(--wt-common-white);
+  margin-bottom: 10px;
+}
+
+.am-stat-num .am-suffix {
+  color: var(--wt-theme-primary);
+}
+
+.am-stat-label {
+  font-family: var(--wt-ff-body);
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--wt-text-2);
+  margin: 0;
+}
+
+/* =========================== Timeline ============================ */
+
+.am-timeline {
+  position: relative;
+  padding-left: 38px;
+}
+
+/* the vertical rail */
+.am-timeline::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--wt-theme-primary), rgba(124, 2, 255, 0.12));
+}
+
+.am-tl-item {
+  position: relative;
+  padding-bottom: 44px;
+}
+
+.am-tl-item:last-child {
+  padding-bottom: 0;
+}
+
+/* the dot */
+.am-tl-item::before {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--wt-common-black);
+  border: 3px solid var(--wt-theme-primary);
+  transition: box-shadow 0.35s ease;
+}
+
+.am-tl-item:hover::before {
+  box-shadow: 0 0 0 6px rgba(124, 2, 255, 0.18);
+}
+
+.am-tl-date {
+  display: inline-block;
+  font-family: var(--wt-ff-body);
+  font-size: 13px;
+  font-weight: var(--wt-fw-medium);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--wt-theme-primary);
+  border: 1px solid rgba(124, 2, 255, 0.4);
+  border-radius: 40px;
+  padding: 4px 14px;
+  margin-bottom: 12px;
+}
+
+.am-tl-title {
+  font-family: var(--wt-ff-heading);
+  font-size: 26px;
+  font-weight: var(--wt-fw-bold);
+  color: var(--wt-common-white);
+  margin: 0 0 4px;
+}
+
+.am-tl-org {
+  font-family: var(--wt-ff-body);
+  font-size: 16px;
+  font-weight: var(--wt-fw-medium);
+  color: var(--wt-text-2);
+  margin: 0 0 8px;
+}
+
+.am-tl-desc {
+  font-family: var(--wt-ff-body);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--wt-text-body);
+  margin: 0;
+  max-width: 760px;
+}
+
+/* a muted variant for non-role entries (education / break) */
+.am-tl-item.is-muted::before {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.am-tl-item.is-muted .am-tl-date {
+  color: var(--wt-text-2);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+/* ========================== Open Source ========================== */
+
+.am-oss-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  padding: 46px;
+  background: linear-gradient(145deg, rgba(124, 2, 255, 0.08), rgba(255, 255, 255, 0.02));
+  transition: border-color 0.35s ease;
+}
+
+.am-oss-card:hover {
+  border-color: rgba(124, 2, 255, 0.55);
+}
+
+.am-oss-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--wt-ff-body);
+  font-size: 12px;
+  font-weight: var(--wt-fw-sbold);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--wt-theme-primary);
+  background: rgba(124, 2, 255, 0.12);
+  border: 1px solid rgba(124, 2, 255, 0.35);
+  border-radius: 40px;
+  padding: 6px 16px;
+  margin-bottom: 20px;
+}
+
+.am-oss-title {
+  font-family: var(--wt-ff-heading);
+  font-size: 44px;
+  font-weight: var(--wt-fw-bold);
+  line-height: 1.1;
+  color: var(--wt-common-white);
+  margin: 0 0 14px;
+}
+
+.am-oss-desc {
+  font-family: var(--wt-ff-body);
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--wt-text-body);
+  max-width: 780px;
+  margin: 0 0 28px;
+}
+
+.am-oss-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.am-oss-feature {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.am-oss-feature h6 {
+  font-family: var(--wt-ff-heading);
+  font-size: 19px;
+  font-weight: var(--wt-fw-bold);
+  color: var(--wt-common-white);
+  margin: 0 0 4px;
+}
+
+.am-oss-feature p {
+  font-family: var(--wt-ff-body);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--wt-text-2);
+  margin: 0;
+}
+
+/* install command */
+.am-code {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Consolas", "Monaco", monospace;
+  font-size: 15px;
+  color: var(--wt-common-white);
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 30px;
+  overflow-x: auto;
+}
+
+.am-code .am-code-prompt {
+  color: var(--wt-theme-primary);
+  user-select: none;
+}
+
+.am-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--wt-ff-body);
+  font-size: 15px;
+  font-weight: var(--wt-fw-sbold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--wt-common-white);
+  background: var(--wt-theme-primary);
+  border-radius: 40px;
+  padding: 14px 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.am-btn:hover {
+  color: var(--wt-common-white);
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+/* ========================= Certifications ======================== */
+
+.am-cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+
+.am-cert {
+  display: flex;
+  gap: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 32px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+  transition: transform 0.35s ease, border-color 0.35s ease;
+}
+
+.am-cert:hover {
+  transform: translateY(-5px);
+  border-color: var(--wt-theme-primary);
+}
+
+.am-cert-icon {
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--wt-theme-primary);
+  background: rgba(124, 2, 255, 0.12);
+  border: 1px solid rgba(124, 2, 255, 0.3);
+  border-radius: 14px;
+}
+
+.am-cert-title {
+  font-family: var(--wt-ff-heading);
+  font-size: 24px;
+  font-weight: var(--wt-fw-bold);
+  line-height: 1.2;
+  color: var(--wt-common-white);
+  margin: 0 0 6px;
+}
+
+.am-cert-issuer {
+  font-family: var(--wt-ff-body);
+  font-size: 15px;
+  color: var(--wt-text-2);
+  margin: 0 0 12px;
+}
+
+.am-cert-id {
+  font-family: "Consolas", "Monaco", monospace;
+  font-size: 13px;
+  color: var(--wt-text-body);
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 6px 12px;
+  display: inline-block;
+  margin: 0;
+  word-break: break-all;
+}
+
+/* ========================== Responsive =========================== */
+
+@media (max-width: 1199px) {
+  .am-stat-num { font-size: 56px; }
+  .am-oss-title { font-size: 38px; }
+}
+
+@media (max-width: 991px) {
+  .am-section { padding: 70px 0; }
+  .am-stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .am-oss-card { padding: 34px; }
+  .am-oss-features { grid-template-columns: 1fr; }
+  .am-cert-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 767px) {
+  .am-section { padding: 50px 0; }
+  .am-section-head { margin-bottom: 36px; }
+  .am-stats-grid { gap: 16px; }
+  .am-stat { padding: 26px 14px; border-radius: 12px; }
+  .am-stat-num { font-size: 42px; }
+  .am-stat-label { font-size: 13px; }
+
+  .am-timeline { padding-left: 28px; }
+  .am-timeline::before { left: 5px; }
+  .am-tl-item::before { left: -28px; width: 12px; height: 12px; }
+  .am-tl-item { padding-bottom: 34px; }
+  .am-tl-title { font-size: 21px; }
+  .am-tl-org, .am-tl-desc { font-size: 15px; }
+
+  .am-oss-card { padding: 24px; border-radius: 14px; }
+  .am-oss-title { font-size: 30px; }
+  .am-oss-desc { font-size: 15px; }
+  .am-code { font-size: 13px; padding: 13px 15px; }
+  .am-btn { padding: 12px 24px; font-size: 13px; }
+
+  .am-cert { flex-direction: column; gap: 16px; padding: 24px; }
+  .am-cert-title { font-size: 20px; }
+}

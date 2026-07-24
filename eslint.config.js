@@ -5,7 +5,9 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
-  globalIgnores(['dist']),
+  // 'public' holds the vendor theme bundle (minified jQuery/GSAP/etc) — linting
+  // it produces hundreds of irrelevant errors and hides real ones in src/.
+  globalIgnores(['dist', 'public']),
   {
     files: ['**/*.{js,jsx}'],
     extends: [

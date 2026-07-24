@@ -3,8 +3,12 @@ import Offcanvas from './components/Offcanvas';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Resume from './components/Resume';
+import Stats from './components/Stats';
+import Timeline from './components/Timeline';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import OpenSource from './components/OpenSource';
+import Certifications from './components/Certifications';
 // import Blog from './components/Blog'; // Blog section currently hidden — re-enable with <Blog /> below
 import Footer from './components/Footer';
 import AnimatedCursor from 'react-animated-cursor';
@@ -108,8 +112,12 @@ function App() {
           <main>
             <Hero />
             <Resume />
+            <Stats />
+            <Timeline />
             <Skills />
             <Projects />
+            <OpenSource />
+            <Certifications />
             {/* <Blog /> */}
           </main>
           <Footer />
