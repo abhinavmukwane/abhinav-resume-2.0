@@ -26,7 +26,7 @@ const timeline = [
         date: 'Aug 2019 — Jan 2021',
         title: 'Career Break',
         org: '',
-        desc: 'A planned break, extended by the COVID-19 hiring slowdown. Returned to full-time work.',
+        desc: 'Break for health recovery, extended by the COVID-19 hiring slowdown. Returned to full-time work, fully recovered.',
         muted: true,
     },
     {

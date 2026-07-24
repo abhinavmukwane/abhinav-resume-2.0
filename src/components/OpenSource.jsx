@@ -46,14 +46,24 @@ const OpenSource = () => {
                                 <span>dotnet add package FintechEncryption</span>
                             </div>
 
-                            <a
-                                className="am-btn"
-                                href="https://github.com/abhinavmukwane/FinTechEncryption"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <i className="fa-brands fa-github"></i> View on GitHub
-                            </a>
+                            <div className="am-btn-row">
+                                <a
+                                    className="am-btn"
+                                    href="https://www.nuget.org/packages/FintechEncryption"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <i className="fa-light fa-box-open"></i> View on NuGet
+                                </a>
+                                <a
+                                    className="am-btn am-btn-ghost"
+                                    href="https://github.com/abhinavmukwane/FinTechEncryption"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <i className="fa-brands fa-github"></i> Source on GitHub
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

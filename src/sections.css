@@ -283,6 +283,23 @@
   opacity: 0.9;
 }
 
+.am-btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* secondary action — outlined rather than filled */
+.am-btn-ghost {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.am-btn-ghost:hover {
+  border-color: var(--wt-theme-primary);
+  opacity: 1;
+}
+
 /* ========================= Certifications ======================== */
 
 .am-cert-grid {
