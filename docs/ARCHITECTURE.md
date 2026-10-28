@@ -51,10 +51,22 @@ index.html (CSS + #root)
 | `Header`       | top nav        | Logo, one-page anchor menu, LinkedIn button, mobile toggle. |
 | `Hero`         | hero           | Name, role, current employer, avatar. |
 | `Resume`       | experience/edu | Bootstrap tab markup for Experience and Education. |
-| `Skills`       | skills grid    | `purecounter` animated percentages. |
+| `Achievements` | awards         | IDBI Innovate 2026 win (FinRiskLens AI). Styled in `src/sections.css`. |
+| `Stats`        | impact numbers | Counter cards. Spans are seeded with the final value (see note below). |
+| `Timeline`     | career journey | Data array at the top of the file; `muted` for education / breaks. |
+| `Skills`       | skills grid    | `purecounter` percentages, seeded with the final value. |
+| `OpenSource`   | NuGet package  | FintechEncryption spotlight. |
+| `Certifications` | credentials  | Data array at the top of the file. |
 | `Projects`     | projects       | Five project cards. |
 | `Blog`         | blog           | **Hidden** — import and render both commented out in `App.jsx`. |
 | `Footer`       | footer         | Brand slider (Swiper), social links, copyright. |
+
+### Counter note
+
+PureCounter's IntersectionObserver doesn't fire reliably under GSAP ScrollSmoother, and an
+empty `<span class="purecounter">` has zero width so it can never reach the 0.5 visibility
+threshold. Always put the final number inside the span (`...data-purecounter-end="95">95</span>`)
+so the correct value shows whether or not the count-up animation runs.
 
 ## Conventions
 

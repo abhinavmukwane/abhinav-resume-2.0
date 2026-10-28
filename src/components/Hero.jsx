@@ -22,6 +22,9 @@ const Hero = () => {
                                         <p className="wt-hero-2-wrap-paragaraph" style={{ marginBottom: '20px', fontSize: 'clamp(18px, 4vw, 30px)', maxWidth: 'none' }}>
                                             Working @ <a target="_blank" href="https://www.softtrust.com/" style={{ color: '#fd7e14' }} rel="noreferrer">Trust Fintech Limited, Nagpur</a>
                                         </p>
+                                        <a className="am-hero-badge" href="#achievements-one-page">
+                                            <i className="fa-solid fa-trophy"></i> 3rd Place · IDBI Innovate 2026
+                                        </a>
                                         <div className="wt-hero-2-button">
                                             <div className="wt-hover-btn-wrapper">
                                                 <a className="wt-btn-circle wt-hover-btn-item wt-hover-btn" target="_blank" href="https://www.linkedin.com/in/abhinav-mukwane" rel="noreferrer">

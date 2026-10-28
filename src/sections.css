@@ -366,6 +366,218 @@
   word-break: break-all;
 }
 
+/* ========================== Achievements ========================= */
+
+.am-award {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  border: 1px solid rgba(124, 2, 255, 0.45);
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(145deg, rgba(124, 2, 255, 0.1), rgba(255, 255, 255, 0.02));
+  box-shadow: 0 0 60px rgba(124, 2, 255, 0.12);
+}
+
+/* left medal panel */
+.am-award-medal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* top-aligned so the medal sits under the glow, not mid-way down a tall card */
+  justify-content: flex-start;
+  text-align: center;
+  padding: 60px 26px 46px;
+  background: radial-gradient(circle at 50% 22%, rgba(255, 196, 0, 0.22), rgba(124, 2, 255, 0.18) 60%, rgba(0, 0, 0, 0.2));
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.am-award-medal .fa-trophy {
+  font-size: 52px;
+  color: #ffc400;
+  filter: drop-shadow(0 6px 18px rgba(255, 196, 0, 0.35));
+  margin-bottom: 14px;
+}
+
+.am-award-rank {
+  font-family: var(--wt-ff-heading);
+  font-size: 92px;
+  font-weight: var(--wt-fw-bold);
+  line-height: 0.9;
+  color: var(--wt-common-white);
+}
+
+.am-award-rank sup {
+  font-size: 0.4em;
+  top: -1.1em;
+  color: #ffc400;
+}
+
+.am-award-rank-label {
+  font-family: var(--wt-ff-body);
+  font-size: 13px;
+  font-weight: var(--wt-fw-sbold);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffc400;
+  margin: 8px 0 22px;
+}
+
+.am-award-event {
+  font-family: var(--wt-ff-heading);
+  font-size: 26px;
+  font-weight: var(--wt-fw-bold);
+  color: var(--wt-common-white);
+  line-height: 1.15;
+}
+
+.am-award-track {
+  font-family: var(--wt-ff-body);
+  font-size: 14px;
+  color: var(--wt-text-2);
+  margin-top: 6px;
+}
+
+/* right content */
+.am-award-body {
+  padding: 44px 46px;
+}
+
+.am-award-org {
+  font-family: var(--wt-ff-body);
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--wt-text-2);
+  margin: 0 0 10px;
+}
+
+.am-award-title {
+  font-family: var(--wt-ff-heading);
+  font-size: 46px;
+  font-weight: var(--wt-fw-bold);
+  line-height: 1.05;
+  color: var(--wt-common-white);
+  margin: 0 0 12px;
+}
+
+.am-award-pitch {
+  font-family: var(--wt-ff-body);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--wt-text-body);
+  margin: 0 0 22px;
+  max-width: 760px;
+}
+
+.am-award-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 26px;
+}
+
+.am-award-list li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 12px;
+  font-family: var(--wt-ff-body);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--wt-text-body);
+}
+
+.am-award-list li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--wt-theme-primary);
+  box-shadow: 0 0 0 4px rgba(124, 2, 255, 0.2);
+}
+
+.am-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 26px;
+}
+
+.am-chip {
+  font-family: var(--wt-ff-body);
+  font-size: 13px;
+  font-weight: var(--wt-fw-medium);
+  color: var(--wt-common-white);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 40px;
+  padding: 5px 14px;
+}
+
+.am-award-team {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 20px;
+  margin-bottom: 28px;
+}
+
+.am-award-team-label {
+  display: block;
+  font-family: var(--wt-ff-body);
+  font-size: 12px;
+  font-weight: var(--wt-fw-sbold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--wt-theme-primary);
+  margin-bottom: 10px;
+}
+
+.am-award-team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+}
+
+.am-member {
+  font-family: var(--wt-ff-body);
+  font-size: 16px;
+  font-weight: var(--wt-fw-medium);
+  color: var(--wt-common-white);
+}
+
+.am-member em {
+  font-style: normal;
+  color: #ffc400;
+  font-size: 14px;
+}
+
+/* small award pill in the hero */
+.am-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--wt-ff-body);
+  font-size: 14px;
+  font-weight: var(--wt-fw-sbold);
+  color: var(--wt-common-white);
+  background: rgba(255, 196, 0, 0.1);
+  border: 1px solid rgba(255, 196, 0, 0.45);
+  border-radius: 40px;
+  padding: 7px 16px;
+  margin-bottom: 24px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.am-hero-badge .fa-trophy {
+  color: #ffc400;
+}
+
+.am-hero-badge:hover {
+  color: var(--wt-common-white);
+  background: rgba(255, 196, 0, 0.2);
+  transform: translateY(-2px);
+}
+
 /* ========================== Responsive =========================== */
 
 @media (max-width: 1199px) {
@@ -379,6 +591,14 @@
   .am-oss-card { padding: 34px; }
   .am-oss-features { grid-template-columns: 1fr; }
   .am-cert-grid { grid-template-columns: 1fr; }
+
+  .am-award { grid-template-columns: 1fr; }
+  .am-award-medal {
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 36px 22px;
+  }
+  .am-award-body { padding: 34px; }
 }
 
 @media (max-width: 767px) {
@@ -404,4 +624,15 @@
 
   .am-cert { flex-direction: column; gap: 16px; padding: 24px; }
   .am-cert-title { font-size: 20px; }
+
+  .am-award { border-radius: 14px; }
+  .am-award-medal .fa-trophy { font-size: 40px; }
+  .am-award-rank { font-size: 70px; }
+  .am-award-event { font-size: 22px; }
+  .am-award-body { padding: 24px; }
+  .am-award-title { font-size: 32px; }
+  .am-award-pitch { font-size: 15px; }
+  .am-award-list li { font-size: 14px; }
+  .am-chip { font-size: 12px; padding: 4px 11px; }
+  .am-hero-badge { font-size: 13px; padding: 6px 13px; }
 }

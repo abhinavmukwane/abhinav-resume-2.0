@@ -8,7 +8,12 @@ no CMS or data file — edit the JSX directly. Keep the `wt-*` class names intac
 |-------------------------------------|------|
 | Name, role, current employer, avatar | `Hero.jsx` |
 | Intro blurb, tech stack, experience, education | `Resume.jsx` |
-| Skill icons and percentages         | `Skills.jsx` (`data-purecounter-end`) |
+| Skill icons and percentages         | `Skills.jsx` (`data-purecounter-end` **and** the span text) |
+| Hackathon / award entries           | `Achievements.jsx` (`highlights`, `stack`, `team` arrays) + hero badge in `Hero.jsx` |
+| Impact numbers                      | `Stats.jsx` (`stats` array) |
+| Career timeline                     | `Timeline.jsx` (`timeline` array) |
+| NuGet package spotlight             | `OpenSource.jsx` |
+| Certifications                      | `Certifications.jsx` (`certs` array) |
 | Project cards                       | `Projects.jsx` |
 | Nav menu links, LinkedIn button     | `Header.jsx` |
 | Mobile menu, location, social links | `Offcanvas.jsx` |

@@ -19,6 +19,7 @@ const Header = () => {
                                     <nav className="wt-main-menu-content">
                                         <ul className="wt-onepage-menu">
                                             <li><a href="#resume-one-page">resume</a></li>
+                                            <li><a href="#achievements-one-page">awards</a></li>
                                             <li><a href="#journey-one-page">journey</a></li>
                                             <li><a href="#skills-one-page">skills</a></li>
                                             <li><a href="#project-one-page">project</a></li>

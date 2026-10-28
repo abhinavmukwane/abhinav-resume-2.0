@@ -3,6 +3,7 @@ import Offcanvas from './components/Offcanvas';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Resume from './components/Resume';
+import Achievements from './components/Achievements';
 import Stats from './components/Stats';
 import Timeline from './components/Timeline';
 import Skills from './components/Skills';
@@ -112,6 +113,7 @@ function App() {
           <main>
             <Hero />
             <Resume />
+            <Achievements />
             <Stats />
             <Timeline />
             <Skills />
