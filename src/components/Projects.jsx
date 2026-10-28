@@ -32,13 +32,41 @@ const Projects = () => {
                     </div>
 
                     <div className="col-xl-6 col-md-6">
+                        <div className="wt-project-2-item mt-50 wt_fade_anim mb-50" data-delay=".3">
+                            <div className="wt-project-2-content">
+                                <h6 className="wt-project-2-subtitle" style={{ color: 'var(--wt-text-2)' }}>ASP.NET Core 8 MVC using EF, C#, ML.NET (LightGBM, SSA, RandomizedPCA), SQL Server, Razor Views, jQuery, Bootstrap, GitHub, Azure</h6>
+                                <h4 className="wt-project-2-title" style={{ marginBottom: '15px' }}>
+                                    <a href="https://finrisklensai.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>
+                                        FinRiskLens AI <i className="fa-regular fa-arrow-up-right" style={{ fontSize: '18px', marginLeft: '5px' }}></i>
+                                    </a>
+                                </h4>
+                                <ul style={{ listStyleType: 'disc', paddingLeft: '20px', textAlign: 'justify' }} className="wt-section-paragraph wt-section-2-paragraph">
+                                    <li><strong>🏆 3rd Place Winner — IDBI Innovate 2026, Track 03 (Financial Health Score)</strong>, built as Team Leader of ASM FinTech Developer.</li>
+                                    <li>FinRiskLens AI is an AI/ML-powered Financial Health Score for MSMEs, with the scoring engine built in-process on ML.NET.</li>
+                                    <li><strong>For India's New-to-Credit (NTC) and New-to-Bank (NTB) MSMEs a credit-worthiness score built from their existing digital footprint.</strong> It aggregates consent-based alternate data:
+                                        <ul style={{ listStyleType: 'circle', paddingLeft: '20px', marginTop: '5px', marginBottom: '5px' }}>
+                                            <li>Udyam</li>
+                                            <li>GST</li>
+                                            <li>ITR</li>
+                                            <li>Account Aggregator</li>
+                                            <li>MCA</li>
+                                        </ul>
+                                    </li>
+                                    <li>This computes a 0 to 1000 Financial Health Score across six weighted dimensions , explains every score, and surfaces it as a visual Financial Health Card for Bank credit officers.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-xl-6 col-md-6">
                         <div className="wt-project-2-item mt-50 wt_fade_anim mb-50" data-delay=".6">
                             <div className="wt-project-2-content">
-                                <h6 className="wt-project-2-subtitle" style={{ color: 'var(--wt-text-2)' }}>ASP.NET MVC using EF, C#, Web API, SQL, jQuery, AJAX, Bootstrap, Git</h6>
-                                <h4 className="wt-project-2-title" style={{ marginBottom: '15px' }}>Loan Origination System</h4>
+                                <h6 className="wt-project-2-subtitle" style={{ color: 'var(--wt-text-2)' }}>ASP.NET MVC using EF, C#, Web API, SQL, jQuery, Bootstrap, Git, Azure</h6>
+                                <h4 className="wt-project-2-title" style={{ marginBottom: '15px' }}>ONDC Credit Seller App</h4>
                                 <ul style={{ listStyleType: 'disc', paddingLeft: '20px', textAlign: 'justify' }} className="wt-section-paragraph wt-section-2-paragraph">
-                                    <li>Developed this web application to automates the process of loan application, approval and disbursement.</li>
-                                    <li>Integrated multiple external services to streamline the loan application process, like Aadhaar &amp; PAN to secure identity verification, OCR (Optical Character Recognition) that extracts text from scanned documents to automate data entry and reduce manual errors, Credit Bureaus &amp; GST to assess their financial health and eligibility for a loan.</li>
+                                    <li>Integrated an Account Aggregator Service (API) to enable secure and efficient data aggregation across various financial institutions for credit assessment purposes.</li>
+                                    <li>Facilitated the seller side of the ONDC credit network, allowing financial institutions to receive and process loan applications securely.</li>
+                                    <li>Ensured seamless data flow and integration with core banking systems.</li>
                                 </ul>
                             </div>
                         </div>
@@ -65,12 +93,11 @@ const Projects = () => {
                     <div className="col-xl-6 col-md-6">
                         <div className="wt-project-2-item mt-50 wt_fade_anim mb-50" data-delay=".6">
                             <div className="wt-project-2-content">
-                                <h6 className="wt-project-2-subtitle" style={{ color: 'var(--wt-text-2)' }}>ASP.NET MVC using EF, C#, Web API, SQL, jQuery, Bootstrap, Git, Azure</h6>
-                                <h4 className="wt-project-2-title" style={{ marginBottom: '15px' }}>ONDC Credit Seller App</h4>
+                                <h6 className="wt-project-2-subtitle" style={{ color: 'var(--wt-text-2)' }}>ASP.NET MVC using EF, C#, Web API, SQL, jQuery, AJAX, Bootstrap, Git</h6>
+                                <h4 className="wt-project-2-title" style={{ marginBottom: '15px' }}>Loan Origination System</h4>
                                 <ul style={{ listStyleType: 'disc', paddingLeft: '20px', textAlign: 'justify' }} className="wt-section-paragraph wt-section-2-paragraph">
-                                    <li>Integrated an Account Aggregator Service (API) to enable secure and efficient data aggregation across various financial institutions for credit assessment purposes.</li>
-                                    <li>Facilitated the seller side of the ONDC credit network, allowing financial institutions to receive and process loan applications securely.</li>
-                                    <li>Ensured seamless data flow and integration with core banking systems.</li>
+                                    <li>Developed this web application to automates the process of loan application, approval and disbursement.</li>
+                                    <li>Integrated multiple external services to streamline the loan application process, like Aadhaar &amp; PAN to secure identity verification, OCR (Optical Character Recognition) that extracts text from scanned documents to automate data entry and reduce manual errors, Credit Bureaus &amp; GST to assess their financial health and eligibility for a loan.</li>
                                 </ul>
                             </div>
                         </div>
@@ -95,32 +122,6 @@ const Projects = () => {
                                         </ul>
                                     </li>
                                     <li>This approach is widely used in banking systems, payment gateways, and fintech APIs.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-6 col-md-6">
-                        <div className="wt-project-2-item mt-50 wt_fade_anim mb-50" data-delay=".3">
-                            <div className="wt-project-2-content">
-                                <h6 className="wt-project-2-subtitle" style={{ color: 'var(--wt-text-2)' }}>ASP.NET Core 8 MVC using EF, C#, ML.NET (LightGBM, SSA, RandomizedPCA), SQL Server, Razor Views, jQuery, Bootstrap, GitHub, Azure</h6>
-                                <h4 className="wt-project-2-title" style={{ marginBottom: '15px' }}>
-                                    <a href="https://finrisklensai.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>
-                                        FinRiskLens AI <i className="fa-regular fa-arrow-up-right" style={{ fontSize: '18px', marginLeft: '5px' }}></i>
-                                    </a>
-                                </h4>
-                                <ul style={{ listStyleType: 'disc', paddingLeft: '20px', textAlign: 'justify' }} className="wt-section-paragraph wt-section-2-paragraph">
-                                    <li><strong>🏆 3rd Place Winner — IDBI Innovate 2026, Track 03 (Financial Health Score)</strong>, built as Team Leader of ASM FinTech Developer.</li>
-                                    <li>FinRiskLens AI is an AI/ML-powered Financial Health Score for MSMEs, with the scoring engine built in-process on ML.NET.</li>
-                                    <li><strong>For India's New-to-Credit (NTC) and New-to-Bank (NTB) MSMEs a credit-worthiness score built from their existing digital footprint.</strong> It aggregates consent-based alternate data:
-                                        <ul style={{ listStyleType: 'circle', paddingLeft: '20px', marginTop: '5px', marginBottom: '5px' }}>
-                                            <li>Udyam</li>
-                                            <li>GST</li>
-                                            <li>ITR</li>
-                                            <li>Account Aggregator</li>
-                                            <li>MCA</li>
-                                        </ul>
-                                    </li>
-                                    <li>This computes a 0 to 1000 Financial Health Score across six weighted dimensions , explains every score, and surfaces it as a visual Financial Health Card for Bank credit officers.</li>
                                 </ul>
                             </div>
                         </div>
