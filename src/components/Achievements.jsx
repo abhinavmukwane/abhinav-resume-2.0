@@ -10,9 +10,9 @@ const highlights = [
 const stack = ['ASP.NET Core 8', 'C#', 'ML.NET', 'LightGBM', 'EF Core 8', 'SQL Server', 'Azure Blob Storage', 'Bootstrap 5', 'Chart.js'];
 
 const team = [
-    { name: 'Abhinav Mukwane', role: 'Team Leader' },
-    { name: 'Sourabh Thakre', role: '' },
-    { name: 'Mayur Khangar', role: '' },
+    { name: 'Abhinav Mukwane', role: 'Team Leader', url: 'https://www.linkedin.com/in/abhinav-mukwane/' },
+    { name: 'Sourabh Thakre', role: '', url: 'https://www.linkedin.com/in/sourabh-thakre-0b6399252' },
+    { name: 'Mayur Khangar', role: '', url: 'https://www.linkedin.com/in/mayur-khangar-8499741a0' },
 ];
 
 const Achievements = () => {
@@ -65,10 +65,17 @@ const Achievements = () => {
                                     <span className="am-award-team-label">Team ASM FinTech Developer</span>
                                     <div className="am-award-team-members">
                                         {team.map((m) => (
-                                            <span className="am-member" key={m.name}>
-                                                {m.name}
+                                            <a
+                                                className="am-member"
+                                                key={m.name}
+                                                href={m.url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                aria-label={`${m.name} on LinkedIn (opens in a new tab)`}
+                                            >
+                                                <i className="fa-brands fa-linkedin"></i> {m.name}
                                                 {m.role && <em> · {m.role}</em>}
-                                            </span>
+                                            </a>
                                         ))}
                                     </div>
                                 </div>

@@ -539,10 +539,24 @@
 }
 
 .am-member {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   font-family: var(--wt-ff-body);
   font-size: 16px;
   font-weight: var(--wt-fw-medium);
   color: var(--wt-common-white);
+  transition: color 0.3s ease;
+}
+
+.am-member .fa-linkedin {
+  color: var(--wt-text-2);
+  transition: color 0.3s ease;
+}
+
+.am-member:hover,
+.am-member:hover .fa-linkedin {
+  color: var(--wt-theme-primary);
 }
 
 .am-member em {
