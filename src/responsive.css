@@ -37,6 +37,88 @@
   }
 }
 
+/*
+ * Desktop hero: fit on one screen.
+ * The theme sizes the hero for ~980px-tall viewports (118px title, 90px gap,
+ * 600px portrait), so on a typical 1366x768 laptop half of it sits below the
+ * fold. Everything here scales with viewport height as well as width.
+ * Two-class selectors so these win over the theme's media-query rules.
+ */
+@media (min-width: 992px) {
+  .wt-hero-2-area {
+    --hero-pad-top: clamp(118px, 17vh, 165px); /* header is 110px, absolute */
+    --hero-pad-bottom: clamp(20px, 4vh, 100px);
+    min-height: 100vh;
+    padding: var(--hero-pad-top) clamp(16px, 4vw, 54px) var(--hero-pad-bottom);
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .wt-hero-2-area .container-fluid {
+    width: 100%;
+  }
+
+  .wt-hero-2-area .wt-hero-2-wrapper {
+    flex-wrap: nowrap;
+    column-gap: 40px;
+  }
+
+  /* stretch to the portrait's height: title pinned to its top edge,
+     "Working @" / badge / button row to its bottom edge */
+  .wt-hero-2-area .wt-hero-2-left {
+    min-width: 0;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .wt-hero-2-area .wt-hero-2-title {
+    font-size: clamp(64px, min(8.6vw, 13.5vh), 170px);
+    margin-bottom: clamp(20px, 4.5vh, 90px);
+  }
+
+  .wt-hero-2-area .wt-hero-2-wrap {
+    gap: clamp(20px, 2.5vw, 60px);
+    align-items: center;
+  }
+
+  /* paragraph + badge stacked on the left, circle button beside them */
+  .wt-hero-2-area .wt-hero-2-wrap-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 26px;
+    row-gap: 12px;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .wt-hero-2-area .wt-hero-2-wrap-paragaraph {
+    grid-column: 1;
+    font-size: clamp(18px, 3.4vh, 30px) !important; /* overrides inline style */
+    margin-bottom: 0 !important;
+    white-space: nowrap;
+  }
+
+  .wt-hero-2-area .am-hero-badge {
+    grid-column: 1;
+    justify-self: start;
+    margin-bottom: 0;
+  }
+
+  .wt-hero-2-area .wt-hero-2-button {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  .wt-hero-2-area .wt-hero-2-thumb {
+    flex-shrink: 0;
+    max-width: clamp(240px, 26vw, 545px);
+    height: calc(100vh - var(--hero-pad-top) - var(--hero-pad-bottom));
+    max-height: 770px;
+  }
+}
+
 /* Very small phones: ensure the hero title never overflows */
 @media (max-width: 400px) {
   .wt-hero-2-title {

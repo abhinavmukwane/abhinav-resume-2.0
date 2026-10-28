@@ -1,5 +1,16 @@
 import React from 'react';
 
+// A plain #hash jump fights GSAP ScrollSmoother (it transforms the page instead of
+// scrolling it), so scroll through the smoother — same 80px offset as the nav links.
+const scrollToAwards = (e) => {
+    const target = document.getElementById('achievements-one-page');
+    if (!target) return;
+    e.preventDefault();
+    const smoother = window.ScrollSmoother?.get();
+    if (smoother) smoother.scrollTo(target, true, 'top 80px');
+    else target.scrollIntoView({ behavior: 'smooth' });
+};
+
 const Hero = () => {
     return (
         <section className="wt-hero-2-area">
@@ -15,14 +26,11 @@ const Hero = () => {
                                     </h1>
                                 </div>
                                 <div className="wt-hero-2-wrap">
-                                    <div className="wt-hero-2-wrap-thumb wt_fade_anim" data-delay=".3">
-                                        <img src="/assets/img/hero/sd.jpg" alt="Abhinav Mukwane" />
-                                    </div>
                                     <div className="wt-hero-2-wrap-content wt_fade_anim" data-delay=".5">
                                         <p className="wt-hero-2-wrap-paragaraph" style={{ marginBottom: '20px', fontSize: 'clamp(18px, 4vw, 30px)', maxWidth: 'none' }}>
                                             Working @ <a target="_blank" href="https://www.softtrust.com/" style={{ color: '#fd7e14' }} rel="noreferrer">Trust Fintech Limited, Nagpur</a>
                                         </p>
-                                        <a className="am-hero-badge" href="#achievements-one-page">
+                                        <a className="am-hero-badge" href="#achievements-one-page" onClick={scrollToAwards}>
                                             <i className="fa-solid fa-trophy"></i> 3rd Place · IDBI Innovate 2026
                                         </a>
                                         <div className="wt-hero-2-button">

@@ -576,6 +576,7 @@
   color: var(--wt-common-white);
   background: rgba(255, 196, 0, 0.1);
   border: 1px solid rgba(255, 196, 0, 0.45);
+  line-height: 1.3;
   border-radius: 40px;
   padding: 7px 16px;
   margin-bottom: 24px;
@@ -590,6 +591,60 @@
   color: var(--wt-common-white);
   background: rgba(255, 196, 0, 0.2);
   transform: translateY(-2px);
+}
+
+/* Highlight: gold glow pulse + a light sweep across the pill + trophy wiggle */
+.am-hero-badge {
+  position: relative;
+  overflow: hidden; /* clips the sweep; box-shadow still renders outside */
+  background: linear-gradient(90deg, rgba(255, 196, 0, 0.16), rgba(124, 2, 255, 0.16));
+  animation: am-badge-pulse 2.4s ease-out infinite;
+}
+
+.am-hero-badge::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+  transform: skewX(-20deg);
+  animation: am-badge-shine 3.6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.am-hero-badge .fa-trophy {
+  display: inline-block;
+  transform-origin: 50% 90%;
+  animation: am-trophy-wiggle 3.6s ease-in-out infinite;
+}
+
+@keyframes am-badge-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(255, 196, 0, 0.5); }
+  70%  { box-shadow: 0 0 0 12px rgba(255, 196, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 196, 0, 0); }
+}
+
+@keyframes am-badge-shine {
+  0%, 55% { left: -60%; }
+  85%, 100% { left: 130%; }
+}
+
+@keyframes am-trophy-wiggle {
+  0%, 60%, 100% { transform: rotate(0deg); }
+  66% { transform: rotate(-14deg); }
+  72% { transform: rotate(12deg); }
+  78% { transform: rotate(-6deg); }
+  84% { transform: rotate(0deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .am-hero-badge,
+  .am-hero-badge::after,
+  .am-hero-badge .fa-trophy {
+    animation: none;
+  }
 }
 
 /* ========================== Responsive =========================== */
